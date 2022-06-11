@@ -1,0 +1,15 @@
+#songTitle {
+    position: absolute;
+width: 1188px;
+height: 50px;
+left: 126px;
+top: 350px;
+font-size: larger;
+text-align: center;
+}
+
+h1 {
+    position: absolute;
+    left: 44.5%;
+    top: 30%;
+}

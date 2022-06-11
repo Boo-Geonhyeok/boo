@@ -1,0 +1,44 @@
+li{
+    position:relative;
+width: 90%;
+height: 70px;
+left: 43px;
+top: 50px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 61px;
+
+color: #000000;
+
+}
+
+button {
+    position: absolute;
+    height: 30px;
+    width: 50px;
+    left: 100%;
+    top: 15px;
+}
+
+h1{
+    position: absolute;
+    width: 40%;
+    top: 5px;
+}
+
+#songTitle {
+    position: absolute;
+width: 584px;
+height: 34px;
+left: 479px;
+top: 25px;
+}
+
+#spotifyFrame {
+    position: relative;
+    top: 30px;
+    left: 0px;
+}

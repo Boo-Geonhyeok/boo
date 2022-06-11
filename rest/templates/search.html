@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/search.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1><a href="http://127.0.0.1:8080/" id="goHome">SPOTWEET</a></h1>
+    <a href="http://127.0.0.1:8080/playlist">PLAYLIST</a>
+    <form action="http://127.0.0.1:8080/search" id="searchForm">
+        <input type="text" id="songTitle" name="songTitle" value="" placeholder={{ .Searched }}>
+    </form>
+    <ul>
+        {{ range .SongData }}
+        <form action="http://127.0.0.1:8080/playlist" method="post">
+            <li>{{ .Title }} ⫘ {{ .Artist }} <button type="submit" id="addButton" name="addButton" onclick="handleAddButtonClick()">add</button></li>
+        </form>
+        <iframe style="border-radius:12px" src={{ .SpotifyURL }} width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" id="spotifyFrame"></iframe>
+        {{ end }}
+    </ul>
+    <script src="/static/search.js"></script>
+</body>
+</html>
